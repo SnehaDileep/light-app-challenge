@@ -1,25 +1,34 @@
+import React, { useState } from "react";
+
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  const [style, setStyle] = useState("phase1");
+  const [isOff, setIsOff] = useState(true);
+
+   
+  const changeStyle = () => {
+     
+ 
+    setStyle("phase2");
+
+ };
+
+
+ return (
+   <>
+   
+     <div className={style}> 
+       <button className="button" onClick={changeStyle }>
+       click here</button> 
+       <button className="button2" onClick={() =>  setIsOff(!isOff)}>{ isOff ? 'ON' : 'OFF' }</button>
+     </div>
+   </>
+ );
+};
+
+
+
 
 export default App;

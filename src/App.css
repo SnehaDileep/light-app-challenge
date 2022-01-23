@@ -28,6 +28,43 @@
   color: #61dafb;
 }
 
+
+.phase1 {
+  width: 250px;
+  height: 250px;
+    
+     margin-top: 15%;
+     margin-left: 42%;
+          border-radius: 50%;
+    
+  background-color: rgb(63, 60, 63);
+}
+.button {
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+    margin-left: 35%;
+    margin-top: 130%;
+}
+.button2{
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+    margin-left: 47%;
+    margin-top: 5%;
+}
+.phase2 {
+  width: 250px;
+  height: 250px;
+  margin-top: 15%;
+  margin-left: 42%;
+  background-color: rgb(233, 120, 15);
+    border-radius: 50%;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
